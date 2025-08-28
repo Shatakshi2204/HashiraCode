@@ -5,7 +5,7 @@
 
 using json = nlohmann::json;
 
-// Decode function to convert base-n string to decimal number
+
 unsigned long long decode_value(const std::string &value, int base) {
     unsigned long long result = 0;
     for (char c : value) {
@@ -21,7 +21,7 @@ unsigned long long decode_value(const std::string &value, int base) {
     return result;
 }
 
-// Lagrange interpolation function to compute polynomial value at x=0
+
 double lagrange_interpolate(const std::vector<int> &x_points, const std::vector<unsigned long long> &y_points, int x) {
     int n = x_points.size();
     double result = 0.0;
